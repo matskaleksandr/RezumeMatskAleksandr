@@ -17,7 +17,6 @@
       --maxw:1000px;
     }
     *{box-sizing:border-box}
-    /* allow page grow taller than viewport */
     html,body{min-height:100vh;margin:0;padding:0}
     body{
       font-family:Montserrat,system-ui,Arial;
@@ -50,7 +49,6 @@
     .skill-list{display:flex;flex-direction:column;gap:8px}
     .skill{display:flex;align-items:center;gap:10px}
     .dot{width:38px;height:38px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--accent);box-shadow:0 2px 6px rgba(0,0,0,0.05)}
-    /* main content */
     .main{flex:1;padding:36px 44px}
     .about{max-width:680px;color:#364444}
     .heading{display:flex;align-items:center;gap:14px}
@@ -103,13 +101,25 @@
       <div class="divider"></div>
 
       <h3 class="section">Стэк технологий</h3>
-      <div class="skill-list">
-        <div class="skill"><div class="dot">C</div><div class="muted">C, C++</div></div>
-        <div class="skill"><div class="dot">K</div><div class="muted">Kotlin, Java</div></div>
-        <div class="skill"><div class="dot">Py</div><div class="muted">Python, JavaScript</div></div>
-        <div class="skill"><div class="dot">1C</div><div class="muted">1C, VBA, PHP, Delphi</div></div>
-        <div class="skill"><div class="dot">DB</div><div class="muted">MySQL, MS SQL, Firebase, SQLite</div></div>
-      </div>
+    <div class="skill-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px;">
+    <div class="skill"><div class="dot">C</div><div class="muted">C</div></div>
+    <div class="skill"><div class="dot">C++</div><div class="muted">C++</div></div>
+    <div class="skill"><div class="dot">K</div><div class="muted">Kotlin</div></div>
+    <div class="skill"><div class="dot">J</div><div class="muted">Java</div></div>
+    <div class="skill"><div class="dot">Py</div><div class="muted">Python</div></div>
+    <div class="skill"><div class="dot">JS</div><div class="muted">JavaScript</div></div>
+    <div class="skill"><div class="dot">1C</div><div class="muted">1C</div></div>
+    <div class="skill"><div class="dot">VBA</div><div class="muted">VBA</div></div>
+    <div class="skill"><div class="dot">PHP</div><div class="muted">PHP</div></div>
+    <div class="skill"><div class="dot">D</div><div class="muted">Delphi</div></div>
+    <div class="skill" style="grid-column: 1 / -1;">
+        <div class="dot">DB</div><div class="muted">MySQL, MS SQL, Firebase, SQLite</div>
+    </div>
+    </div>
+
+
+
+
 
       <div class="divider"></div>
 
