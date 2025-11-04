@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мацкевич Александр — Резюме</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#2f3736;
+      --panel:#ff9393;
+      --accent:#17383a;
+      --muted:#2a2e2e;
+      --paper:#ffffff;
+      --line:rgba(23,56,58,0.9);
+      --shadow: rgba(0,0,0,0.35);
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    /* allow page grow taller than viewport */
+    html,body{min-height:100vh;margin:0;padding:0}
+    body{
+      font-family:Montserrat,system-ui,Arial;
+      background: #222;
+      background-image: url('/mnt/data/fc00f574-4895-413f-bd19-5e51238a5cda.png');
+      background-size:cover;background-position:center center;color:#222;
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+      display:flex;align-items:flex-start;justify-content:center;
+      padding:40px 20px;
+      overflow-y:auto;
+    }
+    .card{
+      width:100%;max-width:var(--maxw);background:linear-gradient(180deg,rgba(255,255,255,0.98),rgba(255,255,255,0.98));display:flex;box-shadow:0 8px 30px var(--shadow);border-radius:6px;overflow:hidden;
+    }
+    .side{
+      width:320px;background:linear-gradient(180deg,#ff9393,#e6e6e6);padding:30px 24px;position:relative;
+    }
+    .photo{
+      width:100%;height:240px;background-image: url('https://i.imgur.com/6Rk1b3s.png');
+      background-size:cover;background-position:center;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.2);
+      margin-bottom:18px;object-fit:cover;
+    }
+    .name{font-family:'Playfair Display',serif;font-size:25px;color:var(--accent);font-weight:1000;margin:6px 0}
+    .title{font-size:13px;color:var(--muted);margin-bottom:16px}
+    .contact{background:transparent;padding:10px 0;border-top:1px solid rgba(0,0,0,0.06)}
+    .contact-item{display:flex;gap:12px;align-items:center;padding:8px 0;color:var(--accent);font-size:14px}
+    .contact-item small{display:block;color:var(--muted);font-size:12px}
+    .divider{height:1px;background:var(--line);margin:18px 0;opacity:0.9}
+    h3.section{margin:8px 0 14px;font-size:16px;color:var(--accent);}
+    .skill-list{display:flex;flex-direction:column;gap:8px}
+    .skill{display:flex;align-items:center;gap:10px}
+    .dot{width:38px;height:38px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--accent);box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    /* main content */
+    .main{flex:1;padding:36px 44px}
+    .about{max-width:680px;color:#364444}
+    .heading{display:flex;align-items:center;gap:14px}
+    .heading h2{margin:0;font-size:18px;color:var(--accent);letter-spacing:0.6px}
+    .hr{height:3px;width:100%;background:var(--line);margin:14px 0 20px}
+    .timeline{position:relative;padding-left:28px;border-left:2px solid rgba(23,56,58,0.12)}
+
+    .muted{color:var(--muted);font-size:14px}
+    .projects a{color:var(--accent);text-decoration:underline}
+    ul.clean{padding-left:18px;margin:8px 0}
+    .two-cols{display:flex;gap:28px}
+    .lang-list li{margin-bottom:6px}
+    .footer-note{margin-top:20px;color:var(--muted);font-size:13px}
+    @media (max-width:980px){
+      .card{flex-direction:column}
+      .side{width:100%}
+      .main{padding:24px}
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <aside class="side">
+      <img class="photo" src="img.png" alt="Фото">
+      <div class="name">Мацкевич Александр Сергеевич</div>
+      <div class="title">19 лет — Backend разработчик</div>
+
+      <div class="contact">
+        <div class="contact-item">
+          <div style="width:34px;text-align:center">📞</div>
+          <div>
+            <div>Телефон</div>
+            <small>+375445509552</small>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div style="width:34px;text-align:center">✉️</div>
+          <div>
+            <div>Email</div>
+            <small>kokoseke06@gmail.com</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3 class="section">Знание языков</h3>
+      <div class="muted"><a href="https://cert.efset.org/LnHeX3" target="_blank">Английский (A2-B1), активно изучаю</a></div>
+
+      <div class="divider"></div>
+
+      <h3 class="section">Стэк технологий</h3>
+      <div class="skill-list">
+        <div class="skill"><div class="dot">C</div><div class="muted">C, C++</div></div>
+        <div class="skill"><div class="dot">K</div><div class="muted">Kotlin, Java</div></div>
+        <div class="skill"><div class="dot">Py</div><div class="muted">Python, JavaScript</div></div>
+        <div class="skill"><div class="dot">1C</div><div class="muted">1C, VBA, PHP, Delphi</div></div>
+        <div class="skill"><div class="dot">DB</div><div class="muted">MySQL, MS SQL, Firebase, SQLite</div></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3 class="section">Личные качества</h3>
+      <ul class="clean muted">
+        <li>Сохраняю спокойствие в конфликтных ситуациях</li>
+        <li>Открыт к общению и новым контактам</li>
+        <li>Легко нахожу общий язык с людьми</li>
+        <li>Люблю искать оригинальные решения</li>
+        <li>Обладаю организаторскими способностями</li>
+        <li>Ответственно отношусь к выполнению поручений</li>
+        <li>Умею четко ставить цели</li>
+      </ul>
+
+    </aside>
+
+    <main class="main">
+      <div class="heading">
+        <h2>ОБО МНЕ:</h2>
+      </div>
+      <div class="about muted">
+        <p>Обладаю практическими навыками построения и настройки локальных сетей, подключения периферийных устройств и знаниями протоколов передачи данных. Дополнительно имею специализацию по обработке бухгалтерской и бизнес-документации. Есть опыт подготовки и публикации Android-приложений.</p>
+      </div>
+      <div class="hr"></div>
+
+      <h2 style="color:var(--accent);">ОБРАЗОВАНИЕ:</h2>
+      <div class="timeline">
+        <div class="item">
+          <strong>2021 — 2025</strong>
+          <div class="muted">Оршанский колледж ВГУ имени П. М. Машерова</div>
+          <div class="muted">Специальность: Программное обеспечение информационных технологий (обработка бухгалтерской и бизнес-документации)</div>
+          <div class="muted">Квалификация: техник-программист. Форма обучения: очная. Окончил с красным дипломом, средний балл 9.1.</div>
+        </div>
+        <div class="item">
+          <strong>2025 — настоящее время</strong>
+          <div class="muted">Поступил в 2025 г. в БГУИР, факультет компьютерных технологий, специальность «инженер-программист» (заочная форма). Из 300 абитуриентов набрал наибольшее количество баллов — 285 из 300.</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+      <h2 style="color:var(--accent);">ПРОЕКТЫ:</h2>
+      <div class="projects muted">
+        <ul class="clean">
+          <li>Программа для расшифровки и перевода в электронный формат товарно-транспортных накладных с использованием ИИ (Windows, C#) — <a href="https://github.com/matskaleksandr/TTN.git" target="_blank">github.com/matskaleksandr/TTN</a></li>
+          <li>Мобильное приложение для изучения японской письменности (Kotlin, Java, Android) — <a href="https://play.google.com/store/apps/details?id=com.QuQ.YomuCards&hl=ru" target="_blank">YomuCards в Google Play</a></li>
+          <li>.NET библиотека для удобного сохранения в бинарные файлы с сжатием — <a href="https://github.com/matskaleksandr/GDELib.git" target="_blank">GDELib</a>, <a href="https://www.nuget.org/packages/GDELib" target="_blank">nuget</a></li>
+          <li>Приложение для сборок компьютеров с использованием Onliner.by API (Windows, Python) — <a href="https://github.com/matskaleksandr/CompSR.git" target="_blank">CompSR</a></li>
+          <li>Приложение для суммаризации данных из видео (Windows, Python)</li>
+          <li>Приложение для составления расписаний при помощи генетического алгоритма (C#)</li>
+          <li>Аппаратно-программный комплекс для тестирования сервомоторов и электромоторов — своя плата и прошивка под AVR.</li>
+          <li>Компьютерная игра в жанре пошаговой стратегии (C#, Android, Linux) — <a href="https://play.google.com/store/apps/details?id=com.QuQ.StraTown&pli=1" target="_blank">StraTown в Google Play</a></li>
+          <li>Попытка создания собственного компилятора для оконных приложений на C# и работа с OpenGL.</li>
+        </ul>
+      </div>
+
+      <div class="hr"></div>
+      <h2 style="color:var(--accent);">О СЕБЕ (Достижения)</h2>
+      <div class="muted">
+        <p>За период обучения получил многочисленные награды:</p>
+        <p>Дипломы I степени в международных научно-практических конференциях «Машеровские чтения» (при Витебском государственном университете им.П.М.Машерова)  и «Старт в науку»,</p> 
+        <p>Диплом I степени в международном конкурсе «Разработка мобильных приложений» (при Минском радиотехническом колледже БГУИР), </p>
+        <p>Приз зрительских симпатий на международной научно-практической конференции «Машеровские чтения» (при Витебском государственном университете им.П.М.Машерова),</p>
+        <p>Диплом II степени в конференции «Старт в науку» и диплом I степени в международном конкурсе лучшего веб-портфолио «Моя сфера» (при Кузнецком  техникуме сервиса и дизайна им.Волкова В.А., Россия).</p>
+      </div>
+
+      <div style="height:18px"></div>
+      <div class="two-cols">
+        <div style="flex:1">
+          <h3 class="section">Контакты</h3>
+          <div class="muted">Телефон: +375445509552<br>Email: kokoseke06@gmail.com</div>
+        </div>
+      </div>
+
+    </main>
+  </article>
+</body>
+</html>
